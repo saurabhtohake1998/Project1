@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<style>
+    body{
+        background-color: aqua;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container{
+        background-color:white;
+       margin-top: 2rem;
+       
+    }
+   div{
+    text-transform: uppercase;
+    margin: 2rem;
+   }
+    h1{
+        border: 1px solid black;
+    }
+    .button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+   .button input{
+       margin: 1rem;
+       padding: 0.5rem;
+       text-transform: uppercase;
+        
+    }
+</style>
+<body><div class="container">
+     <div><h1>Student Registration Form</h1></div>
+    <form action="backend.php" method="post">
+        <div>
+            NAME:<input type="text" name="fname" placeholder="Enter Your Name" >
+        </div>
+     
+        <div>
+            Father's Name:<input type="text" name="Sname">
+        </div>
+        <div>
+            Last Name:<input type="text" name="Lname">
+        </div>
+      
+        <div>
+            Mother's Name:<input type="text" name="Mname">
+        </div>
+      
+        <div>
+            Phone No:<input type="text" name="number">
+        </div>
+      
+        <div>
+            Email:<input type="email" name="email">
+        </div>
+  
+        <div>
+           Gender:  Male:<input type="radio" name="gender" > Female:<input type="radio" name="gender" >Other:<input type="radio" name="gender" >
+        </div>
+        <div>
+            DATE OF BIRTH: <input type="date">
+        </div>
+        <div>
+            address:<input type="text" name="address">
+        </div>
+        <div>
+            bloodgroup:<input type="text">
+        </div>
+        <div>
+            Designation:<select form="designation">
+                <option value="select">Select</option>
+                <option value="BE">Computer Engineering</option>
+                <option value="BT-">IT</option>
+                <option value="BCA">Computer Application</option>
+                <option value="MCA">Master In CA</option>
+                <option value="BSC-">BSC IT</option>
+                <option value="ME">Master in Computer Engineering</option>
+                <option value="MT">Master technical education</option>
+            </select>
+        </div>
+        <div>
+            Cource:<input type="checkbox" name="cource">:JAVA <input type="checkbox" name="cource">:PYTHON<input type="checkbox" name="cource">:PHP <input type="checkbox" name="cource">:JAVASCRIPT <input type="checkbox" name="cource">:ML
+        </div>
+        <div>
+            Photo:<input type="file" multiple>
+        </div>
+        <div class="button"><input type="submit"> <input type="reset"></div>
+    </form>
+</div>
+</body>
+</html>
